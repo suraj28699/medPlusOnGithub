@@ -1,0 +1,105 @@
+<p>admin works!</p>
+<div style="width: 100%;">
+
+
+
+<div style="margin:10px;background-color: rgb(175, 220, 220);display: ; width:95%">
+
+    <div class="row" style="">
+
+        <div class="col-5" style="border: 1px solid red;margin: 10px;">
+            <form name="appDeatils" #frm="ngForm" (ngSubmit)="onSub(frm)">
+                <table style="" class="table table-primary">
+                    <tr>
+                        <th>Sr</th>
+                        <th>Details</th>
+                        <th>Input</th>
+                    </tr>
+                    <tr>
+                        <input type="hidden" name="id" #id="ngModel" ngModel [(ngModel)]="selectedData.id">
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><label for="uName" class="">UserName:</label>
+                        </td>
+                        <td><input type="text" name="uname" id="" class="form-control"
+                            #uname="ngModel" ngModel [(ngModel)]="selectedData.uname"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><label for="eml" class="">Email:</label>
+                        </td>
+                        <td><input type="email" name="eml" id="" class="form-control" #eml="ngModel" ngModel [(ngModel)]="selectedData.eml"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><label for="app" class="">Application:</label>
+                        </td>
+                        <td>
+                            <select style="width: 100%;"  name="app" #app="ngModel" ngModel [(ngModel)]="selectedData.app">
+                                <option *ngFor="let i of appList">{{i}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><label for="license">license: </label></td>
+                        <td><label for="yes">Yes</label>
+                            <input type="radio" name="license" value="Y" #license="ngModel" ngModel [(ngModel)]="selectedData.license">
+                        <label for="no">No</label>
+                        <input type="radio" name="license" value="N" #license="ngModel" ngModel [(ngModel)]="selectedData.license">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><label for="loc">Location:</label></td>
+                        <td>
+                            <select name="loc" style="width: 100%;" #loc="ngModel" ngModel [(ngModel)]="selectedData.loc">
+                                <option *ngFor="let i of locList">{{i}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr style="text-align: right;">
+                        
+                        <td colspan="3">
+                            <Button (click)="update(frm)" type="button" style="background-color: blue;" class="btn btn-sm">Update</Button>
+                            <Button class="btn btn-sm btn-outline-success">submit</Button></td>
+                    </tr>
+
+                </table>
+
+            </form>
+        </div>
+        <div class="col-6" style="border: 1px solid green;">
+            <table class="table table-striped-columns table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Application</th>
+                    <th scope="col">license</th>
+                    <th scope="col">Location</th>
+                    <th scope="col" colspan="2">Action</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of appForAdminData">
+                    <th scope="row">1</th>
+                    <td>{{i.uname}}</td>
+                    <td>{{i.eml}}</td>
+                    <td>{{i.app}}</td>
+                    <td>{{i.license}}</td>
+                    <td>{{i.loc}}</td>
+                    <td><button (click)="edit(i)" class="btn btn-info btn-sm">Edit</button></td>
+                    <td><button (click)="delete(i)" class="btn btn-danger btn-sm">Delete</button></td>
+
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+</div>

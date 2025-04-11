@@ -1,3 +1,54 @@
-p{
-    color:aqua
+p {
+    color: aqua
+}
+
+.container {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.item {
+    background-color: aqua;
+    border: 1px solid blue;
+    margin: 10px;
+    width: 25%;
+    height: 50px;
+}
+
+@media(orientation:landscape) {
+    .container {
+        background-color: green;
+    }
+}
+
+@media(orientation:portrait){
+.container{
+flex-direction: column;
+background-color: violet;
+}
+.item{
+width: 100%;
+}
+}
+@media(max-width:480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 95%;
+        /* margin: ; */
+    }
+}
+
+@media(min-width:700px) and (max-width:900px){
+.container{
+color: violet;
+background-color: yellow;
+}
+.item{
+text-align: center;
+}
 }
