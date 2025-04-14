@@ -3,45 +3,5 @@
   "eth": [],
   "dpy": [],
   "appLicenseForAdmin": [
-    {
-      "id": "7d90",
-      "uname": "Shree",
-      "eml": "shree@1.in",
-      "app": "Solidworks",
-      "license": "N",
-      "loc": ""
-    },
-    {
-      "id": "169b",
-      "uname": "Aaaaa",
-      "eml": "aaaaa@1.in",
-      "app": "Autocad",
-      "license": "N",
-      "loc": "India"
-    },
-    {
-      "id": "",
-      "uname": "a",
-      "eml": "",
-      "app": "",
-      "license": "",
-      "loc": ""
-    },
-    {
-      "id": "",
-      "uname": "sssssssssssssssssssssssssssssssssssss",
-      "eml": "",
-      "app": "",
-      "license": "",
-      "loc": ""
-    },
-    {
-      "id": "",
-      "uname": "sssssssssssssssssssssssssssssssssssss ssssssssssssssss",
-      "eml": "",
-      "app": "",
-      "license": "",
-      "loc": ""
-    }
   ]
 }
