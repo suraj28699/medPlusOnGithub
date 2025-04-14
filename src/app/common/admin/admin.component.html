@@ -8,7 +8,7 @@
     <div class="row" style="">
 
         <div class="col-5" style="border: 1px solid red;margin: 10px;">
-            <form name="appDeatils" #frm="ngForm" (ngSubmit)="onSub(frm)">
+            <form name="appDeatils" #frm="ngForm" (ngSubmit)="frm.form.valid && onSub(frm)">
                 <table style="" class="table table-primary">
                     <tr>
                         <th>Sr</th>
@@ -23,21 +23,29 @@
                         <td><label for="uName" class="">UserName:</label>
                         </td>
                         <td><input type="text" name="uname" id="" class="form-control"
-                            #uname="ngModel" ngModel [(ngModel)]="selectedData.uname"></td>
+                            #uname="ngModel" ngModel [(ngModel)]="selectedData.uname"
+                            required [ngClass]="{'is-invalid':frm.submitted && uname.invalid}"
+                            >
+                           <div style="color: red;" *ngIf="frm.submitted && uname.invalid">User name is required</div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td><label for="eml" class="">Email:</label>
                         </td>
-                        <td><input type="email" name="eml" id="" class="form-control" #eml="ngModel" ngModel [(ngModel)]="selectedData.eml"></td>
+                        <td><input type="email" name="eml" id="" class="form-control" #eml="ngModel" ngModel [(ngModel)]="selectedData.eml" required [ngClass]="{'is-invalid':frm.submitted && eml.invalid}" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                        
+                            <div *ngIf="frm.submitted && eml.invalid" style="color: red;" class="invalid-feedback">email is required</div>
+                            <div *ngIf="frm.submitted && eml.errors?.['pattern'] " class="invalid-feedback" style="color: red">Please enter valid email</div>
+                        </td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td><label for="app" class="">Application:</label>
                         </td>
-                        <td>
-                            <select style="width: 100%;"  name="app" #app="ngModel" ngModel [(ngModel)]="selectedData.app">
-                                <option *ngFor="let i of appList">{{i}}</option>
+                        <td >
+                            <select style="width: 100%;"  name="app" #app="ngModel" ngModel [(ngModel)]="selectedData.app" >
+                                <option  *ngFor="let i of appList">{{i}}</option>
                             </select>
                         </td>
                     </tr>
@@ -45,16 +53,17 @@
                         <td>4</td>
                         <td><label for="license">license: </label></td>
                         <td><label for="yes">Yes</label>
-                            <input type="radio" name="license" value="Y" #license="ngModel" ngModel [(ngModel)]="selectedData.license">
+                            <input type="radio" name="license" value="Y" #license="ngModel" ngModel [(ngModel)]="selectedData.license" >
                         <label for="no">No</label>
-                        <input type="radio" name="license" value="N" #license="ngModel" ngModel [(ngModel)]="selectedData.license">
+                        <input type="radio" name="license" value="N" #license="ngModel" ngModel [(ngModel)]="selectedData.license"  >
                         </td>
+                        <!-- <div *ngIf="frm.submitted && license.invalid">Please select license</div> -->
                     </tr>
                     <tr>
                         <td>5</td>
                         <td><label for="loc">Location:</label></td>
-                        <td>
-                            <select name="loc" style="width: 100%;" #loc="ngModel" ngModel [(ngModel)]="selectedData.loc">
+                        <td >
+                            <select name="loc" style="width: 100%;" #loc="ngModel" ngModel [(ngModel)]="selectedData.loc" >
                                 <option *ngFor="let i of locList">{{i}}</option>
                             </select>
                         </td>
@@ -62,16 +71,17 @@
                     <tr style="text-align: right;">
                         
                         <td colspan="3">
-                            <Button (click)="update(frm)" type="button" style="background-color: blue;" class="btn btn-sm">Update</Button>
-                            <Button class="btn btn-sm btn-outline-success">submit</Button></td>
+                            <Button type="button" (click)="update(frm)"  style="background-color: blue;" class="btn btn-sm">Update</Button>
+                            
+                            <Button type="submit" class="btn btn-sm btn-outline-success">submit</Button></td>
                     </tr>
 
                 </table>
 
             </form>
         </div>
-        <div class="col-6" style="border: 1px solid green;">
-            <table class="table table-striped-columns table-hover">
+        <div class="col-6" style="border: 1px solid green;height: 500px;overflow: auto;">
+            <table class="table table-striped-columns table-hover" >
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -103,3 +113,7 @@
     </div>
 </div>
 </div>
+
+<p>lorem100
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error assumenda delectus iste voluptatibus sequi! Aperiam commodi quasi, nostrum, corporis odio ipsum qui recusandae sapiente saepe sequi harum ad neque corrupti possimus accusamus similique! Tenetur obcaecati temporibus, dolorum a consectetur ipsum ut! Sed minus tempora consequuntur? Expedita eaque reiciendis enim dolore, magni quam quidem magnam ratione corporis aut eos tenetur blanditiis vero tempore voluptas dicta aliquam delectus temporibus consequatur beatae, eligendi accusamus repellat, maiores tempora. Cum obcaecati numquam amet ullam accusamus recusandae, consequuntur consequatur sequi ipsam quia vel rem unde delectus? Ad perspiciatis eius fugit assumenda fuga beatae? Numquam, eveniet vero!
+</p>
