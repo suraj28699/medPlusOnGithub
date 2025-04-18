@@ -10,6 +10,7 @@ export class AdminComponent {
 
   public appList: any = ["Solidworks", "Autocad", "Matlab", "A"];
   public locList: any = ["India", "United State", "United Kingdom", "Mexico", "Rassia","China","Shreelanka","Italy","France"];
+  public city:any=["Pune","Kolhapur","Delhi","Chennai","Goa","Hydrabad","Mumbai"];
 
   public appForAdminData: any = [];
 
@@ -90,5 +91,9 @@ export class AdminComponent {
     )
 
   }
+
+
+  
+ 
 
 }

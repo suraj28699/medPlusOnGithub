@@ -12,6 +12,7 @@ export class DataSerService {
 
   }
 
+  // for admin crud 
   postAdminAppData(dt:any){
     return this.http.post("http://localhost:3000/appLicenseForAdmin",dt);
   }
@@ -26,6 +27,14 @@ updateAdminAppData(dt:any){
   return this.http.put("http://localhost:3000/appLicenseForAdmin/" +dt.id, dt);
 }
 
+// for dpy modal
+
+postDPYModal(dt:any){
+return this.http.post("http://localhost:3000/dpyModal",dt);// received data from dpy component
+}
+getDPYModal(){
+return this.http.get("http://localhost:3000/dpyModal");// this data will fetch in aboutDPY component
+}
 
   // private empC: any = new BehaviorSubject(0);
   // private getEmpC = this.empC.asObservable();

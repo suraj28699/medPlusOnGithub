@@ -1,0 +1,29 @@
+<p>about-dpy works!</p>
+<!-- <div class="dpyNav" style="background-color: rgb(221, 198, 243);margin: 10px 0 10px 0; height: 50px;display: flex; align-items: center;width: 100%;">
+    <a class="dpyNavItem" routerLink="dpy1">dpy sub 1 </a>  
+    <a class="dpyNavItem" routerLink="dpy2">dpy sub 2 </a> 
+    <a class="dpyNavItem" routerLink="dpy3">dpy sub 3 </a> 
+    <a style="margin-left: 50%;" class="dpyNavItem"  routerLink="dpy1">about dpy</a> 
+</div> -->
+
+
+<div class="container">
+    <button class="btn btn-outline-success" routerLink="/dpy">back to dpy home</button>
+
+    <table class="table table-success table-striped-columns">
+
+        <tr>
+            <th>ID</th>
+            <th>Mobile</th>
+            <th>City</th>
+
+        </tr>
+        <tr *ngFor="let i of mobCityArray">
+            <td>{{i.id}}</td>
+            <td>{{i.mob}}</td>
+            <td>{{i.city}}</td>
+
+        </tr>
+    </table>
+
+</div>

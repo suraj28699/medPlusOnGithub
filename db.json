@@ -1,23 +1,11 @@
 {
   "login": [],
   "eth": [],
-  "dpy": [],
-  "appLicenseForAdmin": [
+  "dpyModal": [
     {
-      "id": "7d90",
-      "uname": "Shree",
-      "eml": "shree@1.in",
-      "app": "Solidworks",
-      "license": "N",
-      "loc": ""
-    },
-    {
-      "id": "169b",
-      "uname": "Aaaaa",
-      "eml": "aaaaa@1.in",
-      "app": "Autocad",
-      "license": "N",
-      "loc": "India"
+      "id": "199e",
+      "mob": 1,
+      "city": null
     },
     {
       "id": "",
@@ -29,16 +17,104 @@
     },
     {
       "id": "",
-      "uname": "sssssssssssssssssssssssssssssssssssss",
+      "uname": "a",
+      "eml": "s",
+      "app": "",
+      "license": "",
+      "loc": ""
+    },
+    {
+      "id": "0ca4",
+      "uname": "",
       "eml": "",
       "app": "",
       "license": "",
       "loc": ""
     },
     {
-      "id": "",
-      "uname": "sssssssssssssssssssssssssssssssssssss ssssssssssssssss",
-      "eml": "",
+      "id": "ade7",
+      "uname": "s",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "Y",
+      "loc": ""
+    },
+    {
+      "id": "b6d4",
+      "uname": "s",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "Y",
+      "loc": ""
+    },
+    {
+      "id": "affc",
+      "uname": "s",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "N",
+      "loc": ""
+    },
+    {
+      "id": "bae2",
+      "uname": "a",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "N",
+      "loc": ""
+    },
+    {
+      "id": "d52e",
+      "uname": "a",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "Y",
+      "loc": ""
+    },
+    {
+      "id": "1255",
+      "uname": "a",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "Y",
+      "loc": ""
+    },
+    {
+      "id": "135a",
+      "uname": "a",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "Y",
+      "loc": ""
+    },
+    {
+      "id": "a7af",
+      "uname": "s",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "",
+      "loc": ""
+    },
+    {
+      "id": "e778",
+      "uname": "s",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "",
+      "loc": ""
+    },
+    {
+      "id": "c9fe",
+      "uname": "s",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "",
+      "loc": ""
+    },
+    {
+      "id": "35f2",
+      "uname": "s",
+      "eml": "akankshachopade@gmail.com",
       "app": "",
       "license": "",
       "loc": ""
