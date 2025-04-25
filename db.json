@@ -8,55 +8,40 @@
       "city": null
     },
     {
-      "id": "",
-      "uname": "a",
-      "eml": "",
-      "app": "",
-      "license": "",
-      "loc": ""
+      "id": "f658",
+      "mob": 1,
+      "city": "Goa"
     },
     {
-      "id": "",
-      "uname": "a",
-      "eml": "s",
-      "app": "",
-      "license": "",
-      "loc": ""
+      "id": "1182",
+      "mob": null,
+      "city": null
     },
     {
-      "id": "0ca4",
-      "uname": "",
-      "eml": "",
-      "app": "",
-      "license": "",
-      "loc": ""
+      "id": "0d41",
+      "mob": null,
+      "city": "Pune"
     },
     {
-      "id": "ade7",
-      "uname": "s",
-      "eml": "akankshachopade@gmail.com",
-      "app": "",
-      "license": "Y",
-      "loc": ""
+      "id": "a2a7",
+      "mob": null,
+      "city": "Pune"
     },
     {
-      "id": "b6d4",
-      "uname": "s",
-      "eml": "akankshachopade@gmail.com",
-      "app": "",
-      "license": "Y",
-      "loc": ""
+      "id": "63df",
+      "mob": 1,
+      "city": "Pune"
     },
     {
-      "id": "affc",
-      "uname": "s",
-      "eml": "akankshachopade@gmail.com",
-      "app": "",
-      "license": "N",
-      "loc": ""
-    },
-    {
+      "id": "a8ac",
+      "mob": 1,
+      "city": "Pune"
+    }
+  ],
 
+  "appLicenseForAdmin": [
+
+    {
       "id": "885e",
       "uname": "Suraj1111",
       "eml": "akankshachopade@gmail.com",
@@ -70,39 +55,8 @@
       "eml": "akankshachopade@gmail.com",
       "app": "Solidworks",
       "license": "Y",
-      "loc": ""
-    },
-    {
-      "id": "a7af",
-      "uname": "s",
-      "eml": "akankshachopade@gmail.com",
-      "app": "",
-      "license": "",
-      "loc": ""
-    },
-    {
-      "id": "e778",
-      "uname": "s",
-      "eml": "akankshachopade@gmail.com",
-      "app": "",
-      "license": "",
-      "loc": ""
-    },
-    {
-      "id": "c9fe",
-      "uname": "s",
-      "eml": "akankshachopade@gmail.com",
-      "app": "",
-      "license": "",
-      "loc": ""
-    },
-    {
-      "id": "35f2",
-      "uname": "s",
-      "eml": "akankshachopade@gmail.com",
-      "app": "",
-      "license": "",
-      "loc": ""
+      "loc": "United State" 
     }
+
   ]
 }
