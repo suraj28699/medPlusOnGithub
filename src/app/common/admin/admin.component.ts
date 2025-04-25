@@ -9,7 +9,8 @@ import { DataSerService } from '../services/data-ser.service';
 export class AdminComponent {
 
   public appList: any = ["Solidworks", "Autocad", "Matlab", "A"];
-  public locList: any = ["India", "United State", "United Kingdom", "Mexico", "Rassia"];
+  public locList: any = ["India", "United State", "United Kingdom", "Mexico", "Rassia","China","Shreelanka","Italy","France"];
+  public city:any=["Pune","Kolhapur","Delhi","Chennai","Goa","Hydrabad","Mumbai"];
 
   public appForAdminData: any = [];
 
@@ -30,9 +31,10 @@ export class AdminComponent {
   // form cruid
   // postData
   onSub(dt: any) {
-    console.log(dt.value);
+    // console.log(dt.value);
     this.dataSer.postAdminAppData(dt.value).subscribe(
       (res: any) => {
+        console.log(res);
         this.getData();
       }
     ), (err: any) => console.log(err);
@@ -49,7 +51,7 @@ export class AdminComponent {
 
   // edit
   public selectedData: any = {
-    id: "",
+    // id: '', do not mention this id otherwise it will take blanck id while submitting new entity
     uname: '',
     eml: "",
     app: '',
@@ -89,5 +91,9 @@ export class AdminComponent {
     )
 
   }
+
+
+  
+ 
 
 }

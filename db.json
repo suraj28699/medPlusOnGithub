@@ -1,47 +1,59 @@
 {
   "login": [],
   "eth": [],
-  "dpy": [],
+  "dpyModal": [
+    {
+      "id": "199e",
+      "mob": 1,
+      "city": null
+    },
+    {
+      "id": "f658",
+      "mob": 1,
+      "city": "Goa"
+    },
+    {
+      "id": "1182",
+      "mob": null,
+      "city": null
+    },
+    {
+      "id": "0d41",
+      "mob": null,
+      "city": "Pune"
+    },
+    {
+      "id": "a2a7",
+      "mob": null,
+      "city": "Pune"
+    },
+    {
+      "id": "63df",
+      "mob": 1,
+      "city": "Pune"
+    },
+    {
+      "id": "a8ac",
+      "mob": 1,
+      "city": "Pune"
+    }
+  ],
   "appLicenseForAdmin": [
     {
-      "id": "7d90",
-      "uname": "Shree",
-      "eml": "shree@1.in",
-      "app": "Solidworks",
-      "license": "N",
-      "loc": ""
+      "id": "885e",
+      "uname": "Suraj1",
+      "eml": "akankshachopade@gmail.com",
+      "app": "A",
+      "license": "Y",
+      "loc": "United Kingdom"
     },
     {
-      "id": "169b",
-      "uname": "Aaaaa",
-      "eml": "aaaaa@1.in",
-      "app": "Autocad",
-      "license": "N",
-      "loc": "India"
-    },
-    {
-      "id": "",
+      "id": "7bbf",
       "uname": "a",
-      "eml": "",
-      "app": "",
-      "license": "",
-      "loc": ""
-    },
-    {
-      "id": "",
-      "uname": "sssssssssssssssssssssssssssssssssssss",
-      "eml": "",
-      "app": "",
-      "license": "",
-      "loc": ""
-    },
-    {
-      "id": "",
-      "uname": "sssssssssssssssssssssssssssssssssssss ssssssssssssssss",
-      "eml": "",
-      "app": "",
-      "license": "",
-      "loc": ""
+      "eml": "akankshachopade@gmail.com",
+      "app": "Solidworks",
+      "license": "Y",
+      "loc": "United State"
     }
   ]
 }
