@@ -1,0 +1,11 @@
+
+
+
+
+.dpyNav .dpyNavItem{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    border: 1px solid rgb(50, 6, 50);
+    border-top-right-radius: 10%;
+}
