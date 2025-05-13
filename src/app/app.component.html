@@ -22,6 +22,18 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="dpy3">dpy3</a>
           </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" routerLink="eth">
+                Eth
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="eth/eth1">Eth1</a></li>
+                <li><a class="dropdown-item" routerLink="eth/eth2">Eth2</a></li>
+                <li><a class="dropdown-item" routerLink="eth/eth3">Eth3</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
