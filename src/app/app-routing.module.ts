@@ -13,8 +13,11 @@ const routes: Routes = [
   {path:"dpy", 
     loadChildren:()=>import('./common/nav-item/nav-item.module').then(mod=>mod.NavItemModule)
   },
+  {path:"eth",
+    loadChildren:()=>import('./common/nav-item-ETH/eth.module').then(mod=>mod.ETHModule)
+  },
 {path:"login",component:LoginComponent},
-// {path:"dpy3",component:Dpysub3Component},
+
 
 {path:"admin",component:AdminComponent,canActivate:[CanActGuard]},
 

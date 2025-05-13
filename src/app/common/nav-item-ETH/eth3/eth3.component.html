@@ -1,0 +1,66 @@
+<p>eth3 works!</p>
+
+<div class="container-fluid" style="background-color: aqua;display: flex;justify-content: center;">
+
+    <div class="col-7" style="border: 1px solid red;">
+        <form>
+            <table class="" style="border: 1px solid green;width: 100%;">
+                <tr>
+                    <td>
+                        <div class="tableRow">
+                            <div class="form-group">
+                                <label for="app">Application: </label>
+                                <select name="" id="" style="width: 100px;">
+                                    <option *ngFor="let i of appList">{{i}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="float: right;">
+                                <label for="loc">Country: </label>
+                                <select name="country" id="contry" [(ngModel)]="selectedCountry" (change)="onCountryChange()">
+                                    <option >--select--</option>
+                                    <option *ngFor="let country of countries" [value]="country">{{country}}</option>
+                             
+                                </select>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tableRow">
+                            <div class="form-group">
+                                <label for="city">City:</label>
+                                <select name="" id="city" [(ngModel)]="selectedCity">
+                                    <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+                                    <!-- <option *ngFor=" let a of cityUS">{{a}}</option> -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="opco">Opco:</label>
+                                <select name="" id="">
+                                    <option *ngFor="let o of opco">{{o}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tableRow">
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+hi <button (click)="click()">click</button>
+<hr>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae placeat magnam earum aliquam non at quas corporis illo ratione similique, quasi deleniti provident veniam exercitationem eligendi, voluptate nostrum deserunt quia atque laboriosam? Nemo sapiente repellat repudiandae accusantium nihil iusto inventore amet mollitia aliquam aliquid blanditiis doloremque aspernatur quisquam quae consequatur sit itaque dolorem, pariatur corporis veritatis deserunt vero voluptatum soluta maiores. Temporibus, aut. Fuga iste consequuntur aperiam laborum quis libero magni, voluptates totam eaque sint obcaecati beatae. Temporibus, quisquam? Exercitationem blanditiis cumque nulla ex minima nemo doloremque suscipit obcaecati soluta placeat esse, tempore assumenda error repellendus animi nihil excepturi laboriosam quaerat ducimus voluptas deleniti quas, voluptatibus corporis? Aut, aliquam iure alias eius ea ullam quae maxime, qui cumque nobis illum incidunt consequuntur sunt. Doloribus reprehenderit assumenda cumque exercitationem vitae similique porro doloremque cum aut delectus modi provident ea accusantium, error tenetur hic id sequi mollitia laudantium ut aliquid sunt rerum perferendis! Commodi velit laboriosam perferendis, eligendi ab nisi sint asperiores culpa ratione quia quisquam natus doloremque in, enim minima dolorum earum sit repudiandae. Et architecto doloremque quae unde, delectus id ipsum ad rem quam commodi esse mollitia. Animi consequatur facilis asperiores alias quidem temporibus esse, cumque corrupti harum nihil odit aspernatur atque vel reprehenderit illum magnam? Ratione quia quis ea nesciunt, fugiat eligendi cupiditate? Esse odio obcaecati quam tempore ad tenetur doloremque minima at! Dolores iure illo voluptate provident repudiandae voluptates, culpa numquam, harum sunt sint cupiditate eos voluptas dolor doloremque beatae impedit fugit. Est, omnis sequi ipsam sit quae distinctio perspiciatis veniam. Itaque delectus ad, soluta asperiores est ab assumenda modi obcaecati nobis autem accusamus, molestiae animi iusto nemo illo officia dolore. Architecto soluta enim, praesentium cum quae iste atque voluptatum doloribus autem, esse, eligendi sunt! Vel voluptate earum error. Ipsam fugit nulla dicta maxime odit? Officia impedit harum pariatur ipsa perspiciatis quasi aliquam laudantium, doloribus expedita quis veniam assumenda at possimus labore iusto id aperiam, cum eius nihil saepe. Totam repellat iusto explicabo similique sequi ut, corrupti aperiam ratione et dolorum a impedit quas, iure, fugiat ipsa eaque corporis magnam. Aperiam dolore ex labore! Consequuntur nostrum tempora quam quae ipsam saepe officiis fugiat temporibus fugit amet quod nisi commodi ut, voluptatibus ex voluptate accusantium similique facilis veniam non earum nobis eius pariatur maiores. Impedit cumque a reiciendis commodi dolorum nesciunt quis maiores eveniet nisi modi sapiente dolores vero vitae nemo, eligendi in suscipit nostrum? Enim doloremque soluta reiciendis aperiam a facilis nesciunt, rerum dolore consectetur inventore numquam autem tempore impedit accusamus, tempora dolores, earum molestias omnis hic? Quidem maiores delectus tenetur esse quasi dicta non enim eos nulla perspiciatis accusantium rem numquam dolores iste perferendis consequatur, placeat corrupti, aliquam doloribus. Rem, aliquam! Quam velit tempora voluptas reprehenderit ex veniam repellat dignissimos tenetur veritatis expedita, mollitia alias! Illo, eaque laborum ipsa officiis dolore id ea maxime ut voluptatibus ad assumenda facilis mollitia adipisci dolorum consectetur eius doloribus ab atque minima eos! Iste sed laboriosam reprehenderit sapiente, dicta hic, ad iure temporibus voluptas reiciendis magni omnis nesciunt animi, nostrum nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sint aliquid accusamus accusantium quibusdam saepe eligendi, voluptates, hic ipsam ducimus nostrum! Nulla eos ratione deserunt velit officiis omnis eum quo, molestiae at accusantium doloremque accusamus, repellendus obcaecati provident aspernatur nostrum dignissimos laboriosam sapiente iste iusto voluptatem culpa eaque odio? Sint ad, tenetur pariatur nam, quos omnis veritatis architecto cumque neque dolore velit at consequuntur inventore praesentium, repellat sed delectus ex excepturi minima unde. Delectus alias ex repellat quidem eaque. Tempore labore error natus, quis numquam, reiciendis vel esse facilis alias, at repellendus corporis aliquam officiis harum sequi. Iste, laborum perferendis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime doloribus accusantium corrupti iusto dolores non et sed quibusdam doloremque nisi cupiditate voluptas eligendi molestias, debitis at veritatis sapiente voluptates atque! Itaque omnis, accusantium eos libero deserunt nisi repudiandae recusandae, in eum velit cupiditate minima ullam officia corrupti esse quaerat animi ab optio? Aperiam fugit doloremque, facilis consequuntur amet eos quibusdam dolore voluptas mollitia nesciunt inventore voluptatem, culpa odio odit veritatis ut voluptatum soluta suscipit quasi eligendi impedit hic sint error alias! Sed animi soluta possimus corrupti odit exercitationem quo, quisquam autem explicabo facere rem ullam! Tempore illo voluptas, cupiditate asperiores, doloremque pariatur incidunt esse debitis, assumenda sed atque. Assumenda animi alias eaque nobis! Eveniet mollitia deserunt aspernatur ad, quae temporibus. Esse quod eveniet laboriosam enim? Id voluptates perferendis quod amet earum est, quisquam explicabo itaque eaque ducimus, tempora laborum iusto at consectetur, vitae sed laboriosam debitis voluptas nesciunt vel in. Temporibus nulla nihil veritatis, unde ex molestias voluptatibus vel doloribus eaque commodi porro aut, molestiae, dolore mollitia voluptate beatae impedit est debitis itaque optio consequuntur repellendus odit! Voluptatibus et nulla nemo itaque ducimus sequi voluptate officia consequuntur maxime cupiditate est possimus asperiores, esse similique obcaecati! Voluptatem beatae veritatis voluptas! Incidunt aspernatur, nesciunt error magnam necessitatibus possimus amet enim. Nulla ex repudiandae cumque beatae, repellat vero consequatur. Dolorem excepturi adipisci, sint quis aut voluptatem soluta deleniti dignissimos mollitia. Unde dolor dicta dignissimos quo quibusdam architecto nam deleniti laboriosam. Est vero ipsam quod optio amet voluptatibus dolor adipisci at quis dolores facere ipsum pariatur quisquam aspernatur exercitationem sit, ullam dolorum quia cum cupiditate possimus praesentium quibusdam? Laudantium, similique error perferendis esse quos cupiditate vitae aspernatur, quo a tenetur blanditiis odio eius repellat iusto? Reiciendis in repudiandae, praesentium voluptatibus eveniet labore enim aspernatur doloribus non perferendis vero beatae, veniam magnam. Ullam velit corrupti repellat at dolor ea architecto rem reprehenderit unde cum ipsa, voluptatibus distinctio consequuntur, tempore doloribus cupiditate error placeat consequatur alias officiis mollitia ad sequi! Repellendus, a architecto impedit enim quidem quis consectetur, veritatis fugit similique non dolore laborum numquam aut sunt provident quia magni ipsum! Minima expedita quaerat nisi, minus ullam labore blanditiis aliquam voluptas architecto? Optio veritatis ullam reprehenderit numquam error eveniet sunt officiis? Temporibus sequi, aperiam excepturi vero quis, fuga eos esse magnam voluptas ipsa itaque eligendi ut ab? Explicabo culpa id non. Odio accusantium suscipit iste labore cum repellat nostrum inventore neque officia facilis maxime obcaecati voluptates asperiores in doloremque dolor explicabo eum necessitatibus, eligendi eos non! Hic dolorum ullam corrupti, molestiae omnis laboriosam quia debitis quibusdam veniam eaque officiis maiores libero reiciendis saepe soluta excepturi quae tenetur quidem. Odit neque soluta labore optio autem assumenda corrupti dolor quia! Porro maxime minus inventore magnam cum esse quam doloremque dolores et amet incidunt modi omnis debitis possimus itaque alias, eum nemo laborum vel eligendi unde enim est sequi voluptatem! Voluptates tempora repellendus aliquam omnis inventore blanditiis harum esse illum, rerum at. Libero beatae rem obcaecati harum veniam doloremque soluta esse nisi! Nobis dicta fugiat voluptatum quibusdam enim minima.
+hi
+<input type="text" id="testID"> 
+
+hi

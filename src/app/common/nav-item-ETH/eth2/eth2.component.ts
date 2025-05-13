@@ -7,4 +7,31 @@ import { Component } from '@angular/core';
 })
 export class Eth2Component {
 
+
+  public a:boolean=true;
+  public b:any="hi"
+  public c=11;
+  private d=[1,2,3,4,5];
+
+  cl(){
+
+    debugger;
+    console.log(this.a);
+    console.log(this.b)
+    
+
+    console.log(this.c)
+    console.log(this.d)
+
+
+  }
+
+
+  constructor(){
+    setTimeout(()=>{
+      alert("hi")
+    },3000)
+  }
+
+
 }

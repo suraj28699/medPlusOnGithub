@@ -1,1 +1,27 @@
-<p>eth1 works!</p>
+<p>Ethicon 1 component +plus added </p>
+<ng-content></ng-content>
+<button class="btn btn-primary">eth1 test button</button>
+
+
+<div>
+  <label for="country">Country:</label>
+  <select id="country" [(ngModel)]="selectedCountry" (change)="onCountryChange()">
+    <option value="">--Select Country--</option>
+    <option *ngFor="let country of countries" [value]="country.name">
+      {{ country.name }}
+    </option>
+  </select>
+</div>
+
+<div *ngIf="cities.length > 0">
+  <label for="city">City:</label>
+  <select id="city" [(ngModel)]="selectedCity">
+    <option value="">--Select City--</option>
+    <option *ngFor="let city of cities" [value]="city">
+      {{ city }}
+    </option>
+  </select>
+</div>
+
+
+<p>eth1 end</p>

@@ -1,6 +1,48 @@
 {
   "login": [],
   "eth": [],
+  "appLicenseForAdmin": [
+    {
+      "id": "f573",
+      "uname": "Akanksha chopade",
+      "eml": "akankshachopade@gmail.com",
+      "app": "Autocad",
+      "license": "N",
+      "loc": "United Kingdom"
+    },
+    {
+      "id": "f573",
+      "uname": "Akanksha chopade",
+      "eml": "akankshachopade@gmail.com",
+      "app": "Autocad",
+      "license": "Y",
+      "loc": "India"
+    },
+    {
+      "id": "f573",
+      "uname": "Akanksha chopade",
+      "eml": "akankshachopade@gmail.com",
+      "app": "Autocad",
+      "license": "Y",
+      "loc": "India"
+    },
+    {
+      "id": "aed9",
+      "uname": "a",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "",
+      "loc": ""
+    },
+    {
+      "id": "f573",
+      "uname": "Akanksha chopade",
+      "eml": "akankshachopade@gmail.com",
+      "app": "Autocad",
+      "license": "N",
+      "loc": "United State"
+    }
+  ],
   "dpyModal": [
     {
       "id": "199e",
@@ -33,6 +75,15 @@
       "city": "Pune"
     },
     {
+      "id": "affc",
+      "uname": "s",
+      "eml": "akankshachopade@gmail.com",
+      "app": "",
+      "license": "N",
+      "loc": ""
+    },
+    {
+      "id": "bae2",
       "id": "a8ac",
       "mob": 1,
       "city": "Pune"
