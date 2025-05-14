@@ -127,31 +127,8 @@
     {
       "id": "d508",
       "fname": "ss",
-      "country": "USA",
-      "city": "New York"
+      "country": "India",
+      "city": "Delhi"
     }
   ]
-,
-"appLicenseForAdmin": [
-
-    {
-      "id": "885e",
-      "uname": "Suraj1111",
-      "eml": "akankshachopade@gmail.com",
-      "app": "A",
-      "license": "Y",
-      "loc": "United Kingdom"
-    },
-    {
-      "id": "7bbf",
-      "uname": "a",
-      "eml": "akankshachopade@gmail.com",
-      "app": "Solidworks",
-      "license": "Y",
-      "loc": "United State" 
-    }
-
-
-  ]
-  
-}
+} 
