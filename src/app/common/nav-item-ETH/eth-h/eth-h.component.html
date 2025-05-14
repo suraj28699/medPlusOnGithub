@@ -1,4 +1,61 @@
-<p>eth-h works!</p>Shree
+<p>eth-h works!</p>Shambhu Mahadev
+
+
+<div class="container">
+  <div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="modalClick()">
+  fill details ReactiveForm
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="cityCountry" (ngSubmit)="cityCountry.status=='VALID' && OnSub()" >
+          <div class="form-group">
+            <label for="fname">Name: <span style="color: red;">*</span></label>
+            <input type="text" name="fname" id="ff" formControlName="fname" [ngClass]="{error:f.fname.errors && isSub}">
+            <div *ngIf="f.fname.errors && isSub" class="e">Name is required</div>
+          </div>
+          <div class="form-group">
+            <label for="country">Country: <span style="color: red;">*</span></label>
+            <select name="country" id="country" [(ngModel)]="selectedCountry" (change)="onCountryChange()" formControlName="country" [ngClass]="{error:f.country.errors && isSub}">
+              <!-- <option disabled selected>--select country--</option> -->
+              <option *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
+            </select>
+            <label for="city">City:</label>
+            <select name="city" id="" [(ngModel)]="selectedCity" [disabled]="cities.length===0" formControlName="city">
+              <option value="" disabled selected>--select city--</option>
+              <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+            </select>
+          </div>
+          <!-- <div class="form-group">
+        <button type="button" class="btn btn-primary">Submit</button>
+
+          </div> -->
+       
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" (click)="forValidation()" >Save</button>
+      </div>
+    </form>
+  </div>
+    
+    
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
 
 <div class="d-flex" style="height: 500px;margin: 10px;color: rgb(230, 39, 39);width: 10px;">
     <div style="width: 10px;" class="vr"></div>

@@ -36,6 +36,20 @@ getDPYModal(){
 return this.http.get("http://localhost:3000/dpyModal");// this data will fetch in aboutDPY component
 }
 
+//for eth h cityCountry modal
+
+postCC(dt:any){
+  return this.http.post("http://localhost:3000/cityCountry",dt);
+}
+getCC(){
+  return this.http.get("http://localhost:3000/cityCountry");
+}
+putCC(dt:any){
+  return this.http.put("http://localhost:3000/cityCountry/"+dt.id,dt)
+}
+deleteCC(id:any){
+  return this.http.delete("http://localhost:3000/cityCountry/"+id)
+}
   // private empC: any = new BehaviorSubject(0);
   // private getEmpC = this.empC.asObservable();
 
