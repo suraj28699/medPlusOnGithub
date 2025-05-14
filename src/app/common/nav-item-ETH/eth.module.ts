@@ -5,7 +5,7 @@ import { Eth1Component } from './eth1/eth1.component';
 import { Eth2Component } from './eth2/eth2.component';
 import { RouterModule, Routes } from '@angular/router';
 import { Eth3Component } from './eth3/eth3.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes:Routes=[
   {path:"",component:EthHComponent},
@@ -27,6 +27,7 @@ const routes:Routes=[
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     [RouterModule.forChild(routes)]
   ]
 })

@@ -2,3 +2,9 @@
     --bs-tooltip-bg: var(--bd-violet-bg);
     --bs-tooltip-color: var(--bs-white);
   }
+  .error{
+    border: 1px solid red;
+  }
+  .e{
+    color: red;
+  }

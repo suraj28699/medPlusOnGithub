@@ -3,7 +3,7 @@
 <button class="btn btn-primary">eth1 test button</button>
 
 
-<div>
+<!-- <div>
   <label for="country">Country:</label>
   <select id="country" [(ngModel)]="selectedCountry" (change)="onCountryChange()">
     <option value="">--Select Country--</option>
@@ -11,9 +11,9 @@
       {{ country.name }}
     </option>
   </select>
-</div>
+</div> -->
 
-<div *ngIf="cities.length > 0">
+<!-- <div *ngIf="cities.length > 0">
   <label for="city">City:</label>
   <select id="city" [(ngModel)]="selectedCity">
     <option value="">--Select City--</option>
@@ -21,7 +21,77 @@
       {{ city }}
     </option>
   </select>
-</div>
+</div> -->
 
+<div class="container">
+  <div style="background-color: green;height: 250px;overflow-y:scroll;">
+    <table class="table table-primary table-striped-columns" style="border: 1px solid red;" >
+      <tr>
+        <th>Sr</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>City</th>
+        <th style="text-align: center;border: 1px solid red;" colspan="2" >Action</th>
+      </tr>
+      <tr *ngFor="let i of cityCountryDataFromEthH">
+        <td>{{i.id}}</td>
+        <td>{{i.fname}}</td>
+        <td>{{i.country}}</td>
+        <td>{{i.city}}</td>
+        <td style="text-align: right;">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="edit(i)">
+           Edit
+          </button>
+        </td>
+        <td><button class="btn btn-sm btn-danger" (click)="del(i)">Delete</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- modal start -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="cityCountry" (ngSubmit)="cityCountry.status=='VALID' && updateRecord(cityCountry)" >
+          <div class="form-group">
+            <label for="fname">Name: <span style="color: red;">*</span></label>
+            <input type="text" name="fname" id="ff" formControlName="fname" [ngClass]="{error:f.fname.errors && isSub}">
+            <div *ngIf="f.fname.errors && isSub" class="e">Name is required</div>
+          </div>
+          <div class="form-group">
+            <label for="country">Country: <span style="color: red;">*</span></label>
+            <select name="country" id="country" [(ngModel)]="selectedCountry" (change)="onCountryChange()" formControlName="country" [ngClass]="{error:f.country.errors && isSub}">
+              <!-- <option disabled selected>--select country--</option> -->
+              <option *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
+            </select>
+            <label for="city">City:</label>
+            <select name="city" id="" [(ngModel)]="selectedCity" [disabled]="cities.length===0" formControlName="city">
+              <option value="" disabled selected>--select city--</option>
+              <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+            </select>
+          </div>
+          <!-- <div class="form-group">
+        <button type="button" class="btn btn-primary">Submit</button>
+
+          </div> -->
+       
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" (click)="forValidation()" >Update</button>
+      </div>
+    </form>
+  </div>
+    
+    
+    </div>
+  </div>
+</div>
+  
 
 <p>eth1 end</p>
