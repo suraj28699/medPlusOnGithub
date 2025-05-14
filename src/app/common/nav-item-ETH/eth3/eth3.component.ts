@@ -25,7 +25,7 @@ export class Eth3Component {
   selectedCity: string = '';
 
   constructor(){
-// document.getElementById('testID').focus();
+// document.getElementById('testID')?.focus();
 }
 click(){
 document.getElementById('testID')?.scrollIntoView();
